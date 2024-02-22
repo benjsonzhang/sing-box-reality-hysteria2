@@ -261,7 +261,7 @@ show_client_configuration() {
   echo "Public Key: $public_key"
   echo "Short ID: $short_id"
   echo "------------------------------------"
-
+  exit 0
   # hy2
   hy_port=$(jq -r '.inbounds[] | select(.tag == "hy2-in") | .listen_port' /root/sbox/sbconfig_server.json)
   hy_server_name=$(grep -o "HY_SERVER_NAME='[^']*'" /root/sbox/config | awk -F"'" '{print $2}')
