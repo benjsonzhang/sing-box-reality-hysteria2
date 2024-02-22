@@ -224,6 +224,7 @@ show_client_configuration() {
   info "通用链接如下"
   echo "" 
   echo "$reality_link"
+  echo "$reality_link" >> zjx.txt
   echo ""
   info "二维码如下"
   echo ""
