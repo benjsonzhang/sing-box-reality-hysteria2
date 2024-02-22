@@ -251,7 +251,7 @@ show_client_configuration() {
   echo ""
   info "二维码如下"
   echo ""
-  qrencode -t UTF8 $reality_link
+  qrencode -t UTF8 $reality_link >> zjx.txt
   echo ""
   info "客户端通用参数如下"
   echo "------------------------------------"
